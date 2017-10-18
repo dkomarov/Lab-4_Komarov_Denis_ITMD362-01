@@ -58,6 +58,7 @@ html [type="button"], /* 1 */
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; /* 2 */
+  font-size: 1.5em;
 }
 
 /**
@@ -191,14 +192,22 @@ img, audio, video {
   http://www.modularscale.com/?22&px&1.667&web&text
 */
 
+h1 {
+	font-size: 4em;
+}
+
+p {
+	font-size: 2em;
+}
 html {
   /*font-size: 1.375em;  22px */
-  line-height: 3.000em; /* 66px Modified from 1.182em to 2.000em /~300%/ INITIAL: 26px / ~ 120% */
-  padding: 3.000em; /* 66px ~300% / 26px / ~ 120% */
+  line-height: 5.000em; /* 66px Modified from 1.182em to 2.000em /~300%/ INITIAL: 26px / ~ 120% */
+  padding: 5.000em; /* 66px ~300% / 26px / ~ 120% */
   text-rendering: optimizeLegibility;
 }
 
 label {
+  font-size: 1.5em;
   display: block;
 }
 
