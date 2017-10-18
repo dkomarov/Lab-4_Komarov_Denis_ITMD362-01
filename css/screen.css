@@ -199,11 +199,12 @@ img, audio, video {
 
 h1 {
 	font-size: 4em;
+	line-height: 1em;
 }
 
 p {
 	font-size: 2em;
-	line-height: 3.0em;
+
 }
 
 html {
@@ -227,7 +228,7 @@ input {
 }
 
 #input-age-verification {
-	line-height: 7em;
+
 }
 
 #age-verification-checkbox {
@@ -242,7 +243,7 @@ input {
 }
 
 #input-submit {
-	line-height: 2.5em;
+	line-height: 2em;
 }
 
 /* ===== MODULAR STYLES ===== */
