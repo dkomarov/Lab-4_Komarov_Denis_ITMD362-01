@@ -137,6 +137,7 @@ textarea {
 [type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
+  transform: scale(1.5);
 }
 
 /**
@@ -192,6 +193,10 @@ img, audio, video {
   http://www.modularscale.com/?22&px&1.667&web&text
 */
 
+
+
+/* ===== LAYOUT STYLES ====== */
+
 h1 {
 	font-size: 4em;
 }
@@ -199,10 +204,11 @@ h1 {
 p {
 	font-size: 2em;
 }
+
 html {
   /*font-size: 1.375em;  22px */
-  line-height: 5.000em; /* 66px Modified from 1.182em to 2.000em /~300%/ INITIAL: 26px / ~ 120% */
-  padding: 5.000em; /* 66px ~300% / 26px / ~ 120% */
+  line-height: 5.0em; /* 66px Modified from 1.182em to 2.000em /~300%/ INITIAL: 26px / ~ 120% */
+  padding: 5.0em; /* 66px ~300% / 26px / ~ 120% */
   text-rendering: optimizeLegibility;
 }
 
@@ -211,7 +217,22 @@ label {
   display: block;
 }
 
-/* ===== LAYOUT STYLES ====== */
+#input-email {
+	line-height: 2.0em;
+}
+
+input {
+	font-size: 2.5em;
+}
+
+#age-verification-checkbox {
+	height: .425em;
+}
+
+#age-verification-label {
+	display: inline;
+	padding: 0.5em;
+}
 
 /* ===== MODULAR STYLES ===== */
 
