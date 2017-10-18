@@ -203,6 +203,7 @@ h1 {
 
 p {
 	font-size: 2em;
+	line-height: 3.0em;
 }
 
 html {
@@ -225,13 +226,23 @@ input {
 	font-size: 2.5em;
 }
 
+#input-age-verification {
+	line-height: 7em;
+}
+
 #age-verification-checkbox {
 	height: .425em;
+	width: 0.5em;
 }
 
 #age-verification-label {
 	display: inline;
-	padding: 0.5em;
+	padding: 0.25em;
+
+}
+
+#input-submit {
+	line-height: 2.5em;
 }
 
 /* ===== MODULAR STYLES ===== */
