@@ -193,8 +193,6 @@ img, audio, video {
   http://www.modularscale.com/?22&px&1.667&web&text
 */
 
-
-
 /* ===== LAYOUT STYLES ====== */
 
 h1 {
@@ -204,13 +202,11 @@ h1 {
 
 p {
 	font-size: 1.75em;
-
 }
 
 html {
-  /*font-size: 1.375em;  22px */
-  line-height: 5.0em; /* 66px Modified from 1.182em to 2.000em /~300%/ INITIAL: 26px / ~ 120% */
-  padding: 5.0em; /* 66px ~300% / 26px / ~ 120% */
+ /* 66px Modified from 1.182em to 2.000em /~300%/ INITIAL: 26px / ~ 120% */
+ /* 66px ~300% / 26px / ~ 120% */
   font-family: "Helvetica", "Arial", "Courier", "Courier New", "Verdana", 
   "Tahoma", "Sans-Serif", "Avant Garde", "Georgia", "Times New Roman";
 }
@@ -228,12 +224,8 @@ input {
 	font-size: 2.5em;
 }
 
-#input-age-verification {
-
-}
-
 #age-verification-checkbox {
-	height: .425em;
+	height: 0.425em;
 	width: 0.5em;
 }
 
@@ -251,28 +243,229 @@ input {
 
 /* ===== STATE STYLES ======= */
 
+/*Responsive Design
+	Mobile-First*/
 @media screen and (min-width: 320px) {
 
-	body {
-		color: white;
-	  background: url("../media/navy_blue.jpg") fixed; 
-		background-repeat: no-repeat;	
-		background-size: cover;
-		background-position: center;
-	}
-
+body {
+	color: white;
+	text-shadow: 2px 2px black;
+	background: url("../media/navy_blue.jpg") fixed; 
+	background-repeat: no-repeat;	
+	background-size: cover;
+	background-position: center;
 }
 	
-@media screen and (min-width: 960px) {
+h1 {
+	font-size: 3em;
+	line-height: 1.25em;
+	padding-bottom: 0.75em;
+}
 
-	body {
-	  color: cyan;
-	  text-shadow: 2px 2px black;
-	  background: url("../media/orange_abstract.jpg") fixed; 
-		background-repeat: no-repeat;	
-		background-size: cover;
-		background-position: center;
-	}
+p {
+	font-size: 1.5em;
+	line-height: 1.5em;
+	padding-bottom: 1.5em;
+}
+
+html {
+  padding: 2.5em; 
+}
+
+label {
+  font-size: 1.25em;
+	display: block;
+}
+
+#input-email {
+	line-height: 2.0em;
+	padding-bottom: 2.0em;
+}
+
+input {
+	font-size: 2.0em;
+	width: 100%;
+	margin: auto;
+}
+
+#age-verification-checkbox {
+	height: 0.5em;
+	width: 0.5em;
+  margin-left: 0.5%;
+}
+
+#age-verification-label {
+	display: inline;
+	padding: 0.25em;
+	line-height: 2.5em;
+}
+
+#input-submit {
+	line-height: 2em;
+	padding-top: 2em;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+  transform: scale(1.5);
+}
 
 }
 
+/*Responsive Design
+	Tablets*/
+@media screen and (min-width: 640px) {
+
+html {
+	text-align: center;
+}
+	
+body {
+	color: white;
+	background: url("../media/navy_blue.jpg") fixed; 
+	background-repeat: no-repeat;	
+	background-size: cover;
+	background-position: center;
+}
+	
+h1 {
+	font-size: 4em;
+	line-height: 1.25em;
+	padding-bottom: 0.75em;
+}
+
+p {
+	font-size: 2em;
+	line-height: 1.5em;
+	padding-bottom: 1.5em;
+	margin: auto;
+	width: 83%;
+}
+
+html {
+  padding: 2.5em; 
+ 
+}
+
+label {
+  font-size: 1.5em;
+	 display: block;
+}
+
+#input-email {
+	line-height: 2.0em;
+	padding-bottom: 2.0em;
+}
+
+input {
+	color: navy;
+	font-size: 2em;
+	width: 60%;
+	margin: auto;
+	position: center;
+}
+
+#age-verification-checkbox {
+	height: 0.525em;
+	width: 0.625em;
+}
+
+#age-verification-label {
+	display: inline;
+	padding: 0.25em;
+	line-height: 2.5em;
+}
+
+#input-submit {
+	line-height: 2em;
+	padding-top: 2em;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+  transform: scale(2);
+}
+
+}
+
+/*Responsive Design
+	Desktops*/	
+@media screen and (min-width: 960px) {
+
+body {
+	text-align: left;
+	background: url("../media/navy_blue.jpg") fixed; 
+	background-repeat: no-repeat;	
+	background-size: cover;
+	background-position: center;
+}
+	
+h1 {
+	font-size: 5em;
+	line-height: 1.25em;
+	padding-bottom: 0.75em;
+}
+
+p {
+	font-size: 2.5em;
+	line-height: 1.5em;
+	padding-bottom: 1em;
+	padding-right: 60%;
+	width: 75%;
+}
+
+html {
+  padding: 2.5em;  
+}
+
+label {
+  font-size: 1.5em;
+	display: inline;
+	margin-right: 0.5em;
+}
+
+#input-email {
+	line-height: 2.0em;
+	padding-bottom: 2.0em;
+}
+
+input {
+	font-size: 2.0em;
+	width: 35%;
+	margin: auto;
+}
+
+#age-verification-checkbox {
+	height: 0.5em;
+	width: 0.55em;
+	margin-left: 1%;
+}
+
+#age-verification-label {
+	display: inline;
+	padding: 0.25em;
+	line-height: 2.5em;
+	margin-left: 0.5%;
+}
+
+#input-submit {
+	line-height: 2em;
+	padding-top: 2em;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+  transform: scale(2);
+}
+
+[type="submit"] {
+	width: 25%;
+}
+
+}
